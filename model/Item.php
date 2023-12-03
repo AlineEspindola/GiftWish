@@ -10,7 +10,7 @@ class Item{
     public $nivel_desejo;
     public $media_preco;
 
-    function __construct($id=null){
+    function __construct($id = null){
         if($id){
             $conn = new Connection();
             $item = $conn -> query("SELECT * FROM item WHERE id=$id");
@@ -28,7 +28,7 @@ class Item{
         }
     }
 
-    function delete($id=null){
+    function delete($id = null){
         $conn = new Connection();
         return $conn -> query("DELETE * FROM item WHERE id=$id") -> fetch();
     }
