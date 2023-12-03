@@ -26,7 +26,19 @@ class Item{
                 die('Item não encontrado');
             }
         }
-        
+    }
+
+    function delete($id=null){
+        $conn = new Connection();
+        return $conn -> query("DELETE * FROM item WHERE id=$id") -> fetch();
+    }
+
+    function searchField(){
+        if($nome){
+            $conn = new Connection();
+            $searched = "SELECT * FROM item WHERE nome LIKE '%'$this->nome'%'";
+            return $conn -> query($searched);
+        }
     }
 
 }
