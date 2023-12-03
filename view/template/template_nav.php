@@ -23,11 +23,10 @@
         <nav class="navbar navbar-expand-lg navbar-light">
 
             <a href=""><img src="view/images/logoMedium.png" alt=""></a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre</a>
                     </li>
@@ -39,7 +38,14 @@
                     </li>
                 </ul>
 
-                <button type="button" class="btn btn-success">Cadastre</button>
+                <div class="d-flex align-items-center ml-2">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Login</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-success">Cadastre</button>
+                </div>
             </div>
 
         </nav>
