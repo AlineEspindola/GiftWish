@@ -33,6 +33,11 @@ class Item{
         return $conn -> query("DELETE * FROM item WHERE id=$id") -> fetch();
     }
 
+    function list(){
+        $conn = new Connection();
+        return $coon -> query("SELECT * FROM item");
+    }
+
     function searchField(){ 
         if($nome){
             $conn = new Connection();
