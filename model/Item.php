@@ -13,7 +13,7 @@ class Item{
     function __construct($id=null){
         if($id){
             $conn = new Connection();
-            $user = $conn -> query("SELECT * FROM item WHERE id=$id");
+            $item = $conn -> query("SELECT * FROM item WHERE id=$id");
 
             if($item){
                 $this -> id = $item['id'];
@@ -33,7 +33,7 @@ class Item{
         return $conn -> query("DELETE * FROM item WHERE id=$id") -> fetch();
     }
 
-    function searchField(){
+    function searchField(){ 
         if($nome){
             $conn = new Connection();
             $searched = "SELECT * FROM item WHERE nome LIKE '%'$this->nome'%'";

@@ -43,7 +43,7 @@
                             <a class="nav-link" href="">Login</a>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-success">Cadastre</button>
+                    <button type="button" class="btn btn-success">Cadastro</button>
                 </div>
 
             </div>
