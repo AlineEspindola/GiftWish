@@ -39,3 +39,7 @@ p{
     font-size: 1.1rem;
 }
 
+#exampleInputEmail1{
+    max-width: 400px;
+}
+
