@@ -1,5 +1,5 @@
 <?php
-namespace GifiWish\Model;
+namespace GiftWish\Model;
 
 class Item{
     
@@ -33,9 +33,9 @@ class Item{
         return $conn -> query("DELETE * FROM item WHERE id=$id") -> fetch();
     }
 
-    function list(){
+    static function list(){
         $conn = new Connection();
-        return $coon -> query("SELECT * FROM item");
+        return $conn -> query("SELECT * FROM item");
     }
 
     function searchField(){ 

@@ -34,3 +34,8 @@ main{
     margin-top: 7%;
 }
 
+p{
+    max-width: 650px;
+    font-size: 1.1rem;
+}
+
