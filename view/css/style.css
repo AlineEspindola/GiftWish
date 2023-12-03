@@ -3,6 +3,7 @@
     background-color: #FDFDFD;
 }
 
+/* Template_nav */
 .navbar{
     margin-left: 5%;
     margin-right: 5%;
@@ -19,5 +20,17 @@
 
 .navbar button{
     font-size: 1.2rem;
+}
+
+/* Home */
+h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.1rem;
+    max-width: 390px;
+}
+
+main{
+    text-align: center;
+    margin-top: 7%;
 }
 
