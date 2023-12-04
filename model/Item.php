@@ -38,10 +38,10 @@ class Item{
         return $conn -> query("SELECT * FROM item");
     }
 
-    function searchField(){ 
-        if($nome){
+    static function searchField($search){ 
+        if($search){
             $conn = new Connection();
-            $searched = "SELECT * FROM item WHERE nome LIKE '%'$this->nome'%'";
+            $searched = "SELECT * FROM item WHERE nome LIKE '%$search%'";
             return $conn -> query($searched);
         }
     }

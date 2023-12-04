@@ -3,11 +3,16 @@
 
 <input type="email" class="form-control mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pesquise seu presente...">
 
+<div id="items">
 <?php
 
-foreach ($itens as $item) {
+foreach ($items as $item) {
     echo $item['nome'] . "<br>";
+    echo $item['descricao']. "<br>";
+    echo $item['categoria']. "<br>";
+    echo $item['nivel_desejo']. "<br>";
+    echo "R$".$item['media_preco']. "<br>";
 }
 
-
 ?>
+</div>

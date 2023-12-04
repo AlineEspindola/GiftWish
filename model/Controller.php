@@ -4,10 +4,17 @@ namespace GiftWish\Model;
 class Controller{
 
     function home(){
+        $search = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_SPECIAL_CHARS);
+        if($search){
+            $items = Item::searchField($search);
+        }else{
+            $items = Item::list();
+        }
+
         $page = 'home';
-        $itens = Item::list();
         require 'view/template/template_nav.php';
     }
+
 
 }
 ?>
