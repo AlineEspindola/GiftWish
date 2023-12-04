@@ -38,6 +38,17 @@ class Item{
         return $conn -> query("SELECT * FROM item");
     }
 
+    static function limitCharacters(){
+        $conn = new Connection();
+        $descriptions = $conn -> query("SELECT descricao FROM item") -> fetchAll();
+
+        for ($i = 0; $i<sizeof($descriptions); $i++){
+            $descriptions[$i]['descricao'] = str_split($descriptions[$i]['descricao'], 20);
+        }
+
+        return $descriptions;
+    }
+
     static function searchField($search){ 
         if($search){
             $conn = new Connection();

@@ -6,13 +6,18 @@
 <div id="items">
 <?php
 
+
 foreach ($items as $item) {
     echo "<div class='row'>";
-    echo "<div class='col'>". $item['nome'] . "</div>";
-    echo $item['descricao'];
-    echo "<div class='col'>". $item['categoria']. "</div>";
-    echo "<div class='col'>". $item['nivel_desejo']. "</div>";
-    echo "<div class='col'>R$".$item['media_preco']. "</div>";
+    echo "<div class='col'><h2>". $item['nome'] . "</h2></div>";
+    echo "<div class='col'><h2>Categoria</h2></div>";
+    echo "<div class='col'><h2>Nível de Desejo</h2></div>";
+    echo "<div class='col'><h2>Média de Preço</h2></div>";
+    echo "<div class='w-100'></div>";
+    echo "<div class='col'><p>". $item['descricao']. "</p></div>";
+    echo "<div class='col'><p>". $item['categoria']. "</p></div>";
+    echo "<div class='col'><p>". $item['nivel_desejo']. "</p></div>";
+    echo "<div class='col'><p>R$".$item['media_preco']. "</p></div>";
     echo "</div>";
 }
 
