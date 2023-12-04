@@ -4,7 +4,7 @@ use \PDO;
 use \PDOException;
 
 class Connection extends PDO{
-    private $banco='GiftWish';
+    private $banco='giftwish';
     private $user='root';
     private $password='';
 

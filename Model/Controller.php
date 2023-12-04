@@ -12,7 +12,7 @@ class Controller{
             $items = Item::list();
         }
 
-        $teste = Item::limitCharacters();
+        $descriptions = Item::limitCharacters();
 
         $page = 'home';
         require 'view/template/template_nav.php';
