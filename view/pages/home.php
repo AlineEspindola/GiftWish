@@ -7,11 +7,13 @@
 <?php
 
 foreach ($items as $item) {
-    echo $item['nome'] . "<br>";
-    echo $item['descricao']. "<br>";
-    echo $item['categoria']. "<br>";
-    echo $item['nivel_desejo']. "<br>";
-    echo "R$".$item['media_preco']. "<br>";
+    echo "<div class='row'>";
+    echo "<div class='col'>". $item['nome'] . "</div>";
+    echo $item['descricao'];
+    echo "<div class='col'>". $item['categoria']. "</div>";
+    echo "<div class='col'>". $item['nivel_desejo']. "</div>";
+    echo "<div class='col'>R$".$item['media_preco']. "</div>";
+    echo "</div>";
 }
 
 ?>

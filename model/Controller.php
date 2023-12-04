@@ -5,6 +5,7 @@ class Controller{
 
     function home(){
         $search = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_SPECIAL_CHARS);
+        
         if($search){
             $items = Item::searchField($search);
         }else{
