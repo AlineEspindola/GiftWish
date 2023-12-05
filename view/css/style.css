@@ -1,3 +1,8 @@
+/* Geral */
+body{
+    background-color: #FDFDFD;
+}
+
 .container-fluid{
     padding: 0;
     background-color: #FDFDFD;
@@ -47,7 +52,11 @@ main{
 p{
     max-width: 650px;
     font-size: 1.1rem;
-    font-family: Inria Sans;
+    font-family: 'Inria Sans';
+}
+
+.row p{
+    font-size: 0.9rem;
 }
 
 #exampleInputEmail1{
