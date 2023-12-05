@@ -1,0 +1,21 @@
+/* Home */
+@media (max-width: 500px){
+    #exampleInputEmail1{
+        max-width: 270px;
+    }
+
+    #items{
+        margin: 25px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 990px){
+    main{
+        margin-top: 35px;
+    }
+
+    .media_preco,.nivel_desejo{
+        display: none;
+    }
+}

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="view/css/style.css">
+    <link rel="stylesheet" href="view/css/style_responsive.css">
     <link rel="shortcut icon" href="view/images/logoGift.png" type="image/x-icon">
 
     <title>GiftWish</title>
@@ -39,7 +40,7 @@
                 </ul>
 
                 <div class="d-flex align-items-center ml-2">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="login nav-link" href="">Login</a>
                         </li>

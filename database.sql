@@ -42,10 +42,10 @@ CREATE TABLE `item` (
 
 INSERT INTO `item` (`id`, `nome`, `descricao`, `categoria`, `nivel_desejo`, `media_preco`) VALUES
 (1, 'Caderno', 'Gostaria de um caderno de 20 matérias para eu começar as aulas semana que vem, de preferência de capa de cor rosa', 'Material Escolar', 'Médio', '50.00'),
-(2, 'Computador', 'Meu atual computador esta com defeito, portanto, necessito  de um novo, desde que seja da Dell', 'Eletrônico', 'Alto', '2000.00'),
+(2, 'PC', 'Meu atual computador esta com defeito, portanto, necessito  de um novo, desde que seja da Dell', 'Eletrônico', 'Alto', '2000.00'),
 (3, 'Mouse', 'Um mouse bluetooth com leds é o que falta para meu maravilhoso setup gamer. Gostaria de fosse branco, para combinar ainda mais com o meu setup', 'Eletrônico', 'Alto', '200.00'),
 (4, 'Sapato', 'Urgente, para o evento que acontecerá nesse fim de semana,que é uma festa formal', 'Vestuário', 'Médio', '200.00'),
-(5, 'Morro dos Ventos Uivantes', 'Eu gosto muito desse tipo de romance. Gostaria de aumentar minha coleção de livros desta categoria', 'Livro', 'Médio', '30.00'),
+(5, 'Guarani', 'Eu gosto muito desse tipo de romance. Gostaria de aumentar minha coleção de livros desta categoria', 'Livro', 'Médio', '30.00'),
 (6, 'Monitor', 'Só falta para meu setup um monitor. Pode ser qualquer tamanho', 'Eletrônico', 'Médio', '200.00');
 
 --
