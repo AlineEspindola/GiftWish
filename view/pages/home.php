@@ -9,7 +9,7 @@
 $count = 0;
 
 foreach ($items as $item) {
-    echo "<div class='row'>";
+    echo "<div class='row mx-auto'>";
     echo "<div class='col'><h2>". $item['nome'] ."</h2></div>";
     echo "<div class='col'><h2>Categoria</h2></div>";
     echo "<div class='col'><h2>Nível de Desejo</h2></div>";
