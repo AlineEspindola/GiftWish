@@ -33,15 +33,15 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Contato</a>
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">TabNews</a>
-                        <a class="dropdown-item" href="#">GitHub</a>
+                        <a class="dropdown-item" href="https://www.tabnews.com.br/AlineEspindola" target=blank >TabNews</a>
+                        <a class="dropdown-item" href="https://github.com/AlineEspindola" target=blank>GitHub</a>
                     </li>
                 </ul>
 
                 <div class="d-flex align-items-center ml-2">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="">Login</a>
+                            <a class="login nav-link" href="">Login</a>
                         </li>
                     </ul>
                     <button type="button" class="btn btn-success">Cadastro</button>
