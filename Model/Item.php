@@ -35,12 +35,12 @@ class Item{
 
     static function list(){
         $conn = new Connection();
-        return $conn -> query("SELECT * FROM item");
+        return $conn -> query("SELECT * FROM item") -> fetchAll();
     }
 
     static function limitCharacters(){
         $conn = new Connection();
-        $descriptions = $conn -> query("SELECT descricao FROM item ORDER BY id") -> fetchAll();
+        $descriptions = $conn -> query("SELECT id, descricao FROM item ORDER BY id") -> fetchAll();
 
         for ($i = 0; $i<sizeof($descriptions); $i++){
             $array = str_split($descriptions[$i]['descricao'], 25);
@@ -54,7 +54,7 @@ class Item{
         if($search){
             $conn = new Connection();
             $searched = "SELECT * FROM item WHERE nome LIKE '%$search%' ORDER BY id";
-            return $conn -> query($searched);
+            return $conn -> query($searched) -> fetchAll();
         }
     }
 

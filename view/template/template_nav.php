@@ -20,6 +20,7 @@
     <title>GiftWish</title>
   </head>
   <body>
+    <input type="hidden" id="checkerInvisible" name="" value="<?php if($search){ echo $search; } ?>">
     
     <div class="container-fluid">
 
