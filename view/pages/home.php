@@ -1,5 +1,5 @@
 <h1 class="mx-auto animate__animated animate__bounceInDown">Transforme seus 💚 Desejos em Presentes Memoráveis 🎅🏼</h1>
-<p class="mx-auto animate__animated animate__bounceInDown">Crie sua lista de desejos publicamente, permitindo que amigos e familiares escolham presentes perfeitos sem constrangimentos</p>
+<p class="mx-auto animate__animated animate__bounceInLeft animate__delay-1s">Crie sua lista de desejos publicamente, permitindo que amigos e familiares escolham presentes perfeitos sem constrangimentos</p>
 
 <input class="form-control mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pesquise seu presente...">
 

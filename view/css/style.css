@@ -72,6 +72,11 @@ p{
     max-width: 1050px; 
 }
 
+.row:hover{
+    transform: scale(1.09);
+    transition: 100ms linear; 
+}
+
 #items{
     margin: 50px;
 }
