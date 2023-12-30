@@ -18,10 +18,24 @@ removeAnimation();
 function removeAnimation(){
     if(checkerInvisible.value){
         for(i = 0; i <= animatedItems.length; i++){
-            console.log("<3")
             animatedItems[i].classList.remove("animate__animated");
         }
     }
+}
+
+function limitCharacters(text){
+    var characters = text.split('');
+    var finalText = '';
+
+    for(var i = 0; i<=characters.length; i++){
+        finalText+=characters[i];
+        if(i == 25){
+            break;
+        }
+    }
+
+    finalText+='...';
+    return finalText;
 }
 
 
