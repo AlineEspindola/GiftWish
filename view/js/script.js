@@ -2,6 +2,7 @@ const search = document.getElementById("exampleInputEmail1");
 const items = document.getElementById("items");
 const animatedItems = document.querySelectorAll(".animate__animated");
 const checkerInvisible = document.getElementById("checkerInvisible");
+const descriptions = document.querySelectorAll("#description");
 
 search.focus();
 
@@ -13,8 +14,6 @@ search.addEventListener("keypress", function(e){
     }
 })
 
-removeAnimation();
-
 function removeAnimation(){
     if(checkerInvisible.value){
         for(i = 0; i <= animatedItems.length; i++){
@@ -23,19 +22,26 @@ function removeAnimation(){
     }
 }
 
-function limitCharacters(text){
-    var characters = text.split('');
-    var finalText = '';
+removeAnimation();
 
-    for(var i = 0; i<=characters.length; i++){
-        finalText+=characters[i];
-        if(i == 25){
-            break;
+function limitCharacters(descriptions){
+    for(var i = 0; i < descriptions.length; i++){
+        var characters = descriptions[i].innerHTML.split('');
+        var finalDescription = '';
+
+        for(var j = 0; j < characters.length; j++){
+            finalDescription += characters[j];
+
+            if(j == 24){
+                break;
+            }
         }
+ 
+        finalDescription += '...';
+        descriptions[i].innerHTML = finalDescription;
     }
-
-    finalText+='...';
-    return finalText;
 }
+
+limitCharacters(descriptions);
 
 
