@@ -16,7 +16,7 @@ search.addEventListener("keypress", function(e){
 
 function removeAnimation(){
     if(checkerInvisible.value){
-        for(i = 0; i <= animatedItems.length; i++){
+        for(i = 0; i < animatedItems.length; i++){
             animatedItems[i].classList.remove("animate__animated");
         }
     }
